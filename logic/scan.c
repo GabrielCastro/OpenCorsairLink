@@ -141,7 +141,7 @@ corsairlink_device_scanner( libusb_context* context, int* _scanlist_count )
                 }
                 else
                 {
-                    msg_debug( "Could not open device %d:%d.", desc.idVendor, desc.idProduct );
+                    msg_debug( "Could not open device (%04x:%04x).\n", desc.idVendor, desc.idProduct );
                 }
             }
         }
